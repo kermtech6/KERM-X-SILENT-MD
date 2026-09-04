@@ -116,7 +116,6 @@
       "required": false,
       "value": "false"
     },
-  
     "ANTI_CALL": {
       "description": "Make it true if you want the bot to automatically reject incoming calls.",
       "required": false,
@@ -136,6 +135,11 @@
       "description": "Extra owner numbers, comma-separated, without + or spaces (example: 237600000000,237611111111).",
       "required": false,
       "value": ""
+    },
+    "DATABASE_URL": {
+      "description": "Optional: your own Postgres connection string (Supabase, Heroku Postgres, etc). Leave empty to deploy instantly using the bot's default shared database — no setup needed, but your sudo list, sticker commands, etc. won't be private to your deployment alone. Set this if you want your own isolated database.",
+      "required": true,
+      "value": "postgresql://postgres.ezxejajhkekvabanjisk:Emmanuelrayan666@aws-1-eu-west-1.pooler.supabase.com:5432/postgres"
     }
   },
   "buildpacks": [
