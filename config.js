@@ -43,12 +43,20 @@ OMDB_API_KEY: process.env.OMDB_API_KEY || "76cb7f39", // omdbapi.com
 // ============ NOUVELLES VARIABLES AJOUTÉES ============
 STATUS_REACT: process.env.STATUS_REACT || "false",
 AUTO_REPLY_STATUS: process.env.AUTO_REPLY_STATUS || "false",
-STATUS_REPLY: process.env.STATUS_REPLY || "SEEN BY KERM MD V1🥷🏼",
+STATUS_REPLY: process.env.STATUS_REPLY || "Merci pour ton statut ❤️",
 READ_MESSAGE: process.env.READ_MESSAGE || "false",
-READ_CMD: process.env.READ_CMD || "true",
+READ_CMD: process.env.READ_CMD || "false",
 ANTI_DEL_PATH: process.env.ANTI_DEL_PATH || "log", // "log" = envoie en DM owner, sinon renvoie dans le chat d'origine
 ANTI_CALL: process.env.ANTI_CALL || "false",
 ANTI_SPAM: process.env.ANTI_SPAM || "false",
 AUTO_DOWNLOAD: process.env.AUTO_DOWNLOAD || "false",
 OWNER_NUMBER: process.env.OWNER_NUMBER || "",
+
+// Shared Supabase Postgres database. Every deployment of this bot that
+// doesn't set its own DATABASE_URL env var connects to this same database
+// and the same tables (sudo, sticker commands, antidelete settings...).
+// This is intentional: it lets anyone deploy the bot with zero database
+// setup. Set DATABASE_URL as an env var on your own deployment if you want
+// a private, isolated database instead.
+DATABASE_URL: process.env.DATABASE_URL || "postgresql://postgres.ezxejajhkekvabanjisk:Emmanuelrayan666@aws-1-eu-west-1.pooler.supabase.com:5432/postgres",
 };
