@@ -22,7 +22,7 @@
       "value": "HI DEAR USER KERM-MD ALIVE NOW POWERED BY LORD KERM 🤍💫💨."
     },
     "PREFIX": {
-      "description": "paste your bot prefix note! Don't apply null please prefix.",
+      "description": "paste your bot prefix note! eg: .,!? or null to remove prefix",
       "required": true,
       "value": "."
     },
@@ -54,6 +54,11 @@
     "ANTI_LINK": {
       "description": "Make it true if you want bot auto remove group link.",
       "required": true,
+      "value": "true"
+    },
+    "ALWAYS_ONLINE": {
+      "description": "Make it true if you want you to be always online even if you are offline.",
+      "required": false,
       "value": "true"
     },
     "ANTI_BAD": {
