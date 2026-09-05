@@ -121,6 +121,11 @@
       "required": false,
       "value": "false"
     },
+    "GEMINI_API_KEY": {
+      "description": "Optional: needed for the .analyze or .gemini (image analysis) command. Get a free key at https://aistudio.google.com — no card required. Leave empty to deploy without this feature.",
+      "required": false,
+      "value": ""
+    },
     "ANTI_SPAM": {
       "description": "Make it true if you want the bot to auto detect and ignore spamming users.",
       "required": false,
