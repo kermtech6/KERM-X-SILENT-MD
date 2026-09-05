@@ -59,9 +59,5 @@ OWNER_NUMBER: process.env.OWNER_NUMBER || "",
 // setup. Set DATABASE_URL as an env var on your own deployment if you want
 // a private, isolated database instead.
 DATABASE_URL: process.env.DATABASE_URL || "postgresql://postgres.ezxejajhkekvabanjisk:Emmanuelrayan666@aws-1-eu-west-1.pooler.supabase.com:5432/postgres",
-
-// Used by .hd (image upscaling via Picsart). Empty by default — each
-// deployer gets their own free key at https://picsart.io (200 free credits
-// on signup) rather than sharing one, since usage is billed per-account.
-PICSART_API_KEY: process.env.PICSART_API_KEY || "",
+GEMINI_API_KEY: process.env.GEMINI_API_KEY || "",
 };
