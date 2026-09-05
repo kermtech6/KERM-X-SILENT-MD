@@ -121,11 +121,6 @@
       "required": false,
       "value": "false"
     },
-    "PICSART_API_KEY": {
-      "description": "Optional: needed for the .hd (image upscale) command. Get a free key at https://picsart.io (200 free credits on signup). Leave empty to deploy without this feature.",
-      "required": false,
-      "value": ""
-    },
     "ANTI_SPAM": {
       "description": "Make it true if you want the bot to auto detect and ignore spamming users.",
       "required": false,
